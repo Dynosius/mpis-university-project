@@ -1,0 +1,1 @@
+Blizimo se kraju programa, treba jos dodati neke detalje poput dodatnih signala i omoguciti sinkronizaciju svih komponenata (back end s front endom).

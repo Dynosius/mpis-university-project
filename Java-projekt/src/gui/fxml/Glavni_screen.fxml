@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" prefHeight="200.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Glavni_kontroler">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Liste signala">
+            <items>
+                <Menu mnemonicParsing="false" text="Dalekovodno polje">
+                  <items>
+                        <MenuItem fx:id="svi_dv" mnemonicParsing="false" onAction="#svi_dv_klik" text="Svi" />
+                        <MenuItem fx:id="trenutni_dv" mnemonicParsing="false" onAction="#trenutni_dv_klik" text="Trenutni signali" />
+                    <MenuItem fx:id="ras_l_dv" mnemonicParsing="false" onAction="#ras_l_dv_klik" text="Lijevi rastavljač" />
+                        <MenuItem fx:id="ras_d_dv" mnemonicParsing="false" onAction="#ras_d_dv_klik" text="Desni rastavljač" />
+                        <MenuItem fx:id="ras_do_dv" mnemonicParsing="false" onAction="#ras_do_dv_klik" text="Linijski rastavljač" />
+                        <MenuItem fx:id="ras_p_dv" mnemonicParsing="false" onAction="#ras_p_dv_klik" text="Prekidač" />
+                        <MenuItem fx:id="linijski_ras" mnemonicParsing="false" onAction="#linijski_ras_klik" text="Uzemljenje" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Spojno polje">
+                     <items>
+                        <MenuItem fx:id="svi_sp" mnemonicParsing="false" onAction="#svi_sp_klik" text="Svi signali" />
+                        <MenuItem fx:id="trenutni_sp" mnemonicParsing="false" onAction="#trenutni_sp_klik" text="Trenutni signali" />
+                        <MenuItem fx:id="ras_l_sp" mnemonicParsing="false" onAction="#ras_l_sp_klik" text="Lijevi rastavljač" />
+                        <MenuItem fx:id="ras_d_sp" mnemonicParsing="false" onAction="#ras_d_sp_klik" text="Desni rastavljač" />
+                        <MenuItem fx:id="p_sp" mnemonicParsing="false" onAction="#p_sp_klik" text="Prekidač" />
+                     </items>
+                  </Menu>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Mjerenja">
+               <items>
+                  <MenuItem fx:id="mjerenja" mnemonicParsing="false" onAction="#mjerenja_klik" text="Prikaži mjerenja" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" scaleX="0.9" scaleY="0.9" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="451.0" text="Postrojenje TS-B">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+            <Circle fill="WHITE" layoutX="760.0" layoutY="369.0" radius="50.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="5.0" />
+            <Line endX="900.0" layoutX="251.0" layoutY="93.0" startX="-100.0" strokeWidth="7.0" />
+            <Label layoutX="76.0" layoutY="71.0" text="S1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="76.0" layoutY="146.0" text="S2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Line endX="900.0" layoutX="251.0" layoutY="168.0" startX="-100.0" strokeWidth="7.0" />
+            <Line endX="100.0" layoutX="275.0" layoutY="173.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="170.0" layoutX="91.0" layoutY="211.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="210.0" layoutX="71.0" layoutY="362.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="210.0" layoutX="220.0" layoutY="362.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="110.0" layoutX="196.0" layoutY="384.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="210.0" layoutX="149.0" layoutY="407.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Circle fill="WHITE" layoutX="381.0" layoutY="475.0" radius="50.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="5.0" />
+            <Line endX="210.0" layoutX="149.0" layoutY="550.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="210.0" layoutX="149.0" layoutY="648.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="210.0" layoutX="134.0" layoutY="660.0" rotate="45.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="210.0" layoutX="165.0" layoutY="660.0" rotate="-45.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="200.0" layoutX="155.0" layoutY="644.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="170.0" layoutX="438.0" layoutY="211.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="100.0" layoutX="696.0" layoutY="172.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="220.0" layoutX="413.0" layoutY="352.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="220.0" layoutX="636.0" layoutY="352.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="200.0" layoutX="451.0" layoutY="369.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="195.0" layoutX="618.0" layoutY="369.0" startX="254.0" strokeWidth="7.0" />
+            <Circle fx:id="dv_rl_k" fill="#5cc344" layoutX="328.0" layoutY="292.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fx:id="dv_rd_k" fill="#5cc344" layoutX="428.0" layoutY="291.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fx:id="dv_p_k" fill="#5cc344" layoutX="453.0" layoutY="474.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fx:id="dv_rdo_k" fill="#5cc344" layoutX="406.0" layoutY="600.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fx:id="sp_rl_k" fill="#5cc344" layoutX="673.0" layoutY="293.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fx:id="sp_p_k" fill="#5cc344" layoutX="764.0" layoutY="445.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fx:id="sp_rd_k" fill="#5cc344" layoutX="852.0" layoutY="294.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+            <Line fx:id="drdo" endX="200.0" layoutX="154.0" layoutY="600.0" rotate="90.0" startX="254.0" stroke="#d31717" strokeWidth="7.0" />
+            <Line fx:id="dp" endX="160.0" layoutX="174.0" layoutY="475.0" rotate="90.0" startX="254.0" stroke="#d31717" strokeWidth="7.0" />
+            <Line fx:id="drl" endX="170.0" layoutX="91.0" layoutY="294.0" rotate="90.0" startX="254.0" stroke="#d31717" strokeWidth="7.0" />
+            <Line fx:id="drd" endX="170.0" layoutX="240.0" layoutY="296.0" rotate="90.0" startX="254.0" stroke="#d31717" strokeWidth="7.0" />
+            <Line fx:id="srl" endX="170.0" layoutX="438.0" layoutY="293.0" rotate="90.0" startX="254.0" stroke="#d31717" strokeWidth="7.0" />
+            <Line fx:id="srd" endX="170.0" layoutX="661.0" layoutY="295.0" rotate="90.0" startX="254.0" stroke="#d31717" strokeWidth="7.0" />
+            <Line fx:id="sp" endX="160.0" layoutX="553.0" layoutY="369.0" startX="254.0" stroke="#d31717" strokeWidth="7.0" />
+            <Button fx:id="uk_dv_l_r" layoutX="199.0" layoutY="246.0" mnemonicParsing="false" onAction="#uk_dv_l_r_klik" text="Uključi" />
+            <Button fx:id="isk_dv_l_r" layoutX="199.0" layoutY="280.0" mnemonicParsing="false" onAction="#isk_dv_l_r_klik" text="Isključi" />
+            <Button fx:id="isk_dv_do_r" layoutX="452.0" layoutY="659.0" mnemonicParsing="false" onAction="#isk_dv_do_r_klik" text="Isključi" />
+            <Button fx:id="isk_dv_p" layoutX="490.0" layoutY="482.0" mnemonicParsing="false" onAction="#isk_dv_p_klik" text="Isključi" />
+            <Button fx:id="uk_dv_p" layoutX="491.0" layoutY="445.0" mnemonicParsing="false" onAction="#uk_dv_p_klik" text="Uključi" />
+            <Button fx:id="isk_dv_d_r" layoutX="482.0" layoutY="244.0" mnemonicParsing="false" onAction="#isk_dv_d_r_klik" text="Isključi" />
+            <Button fx:id="uk_dv_d_r" layoutX="481.0" layoutY="210.0" mnemonicParsing="false" onAction="#uk_dv_d_r_klik" text="Uključi" />
+            <Button fx:id="isk_sp_l_r" layoutX="566.0" layoutY="243.0" mnemonicParsing="false" onAction="#isk_sp_l_r_klik" text="Isključi" />
+            <Button fx:id="uk_sp_l_r" layoutX="565.0" layoutY="209.0" mnemonicParsing="false" onAction="#uk_sp_l_r_klik" text="Uključi" />
+            <Button fx:id="uk_dv_do_r" layoutX="452.0" layoutY="625.0" mnemonicParsing="false" onAction="#uk_dv_do_r_klik" text="Uključi" />
+            <Button fx:id="uk_sp_p" layoutX="732.0" layoutY="460.0" mnemonicParsing="false" onAction="#uk_sp_p_klik" text="Uključi" />
+            <Button fx:id="isk_sp_p" layoutX="733.0" layoutY="493.0" mnemonicParsing="false" onAction="#isk_sp_p_klik" text="Isključi" />
+            <Button fx:id="uk_sp_d_r" layoutX="911.0" layoutY="230.0" mnemonicParsing="false" onAction="#uk_sp_d_r_klik" text="Uključi" />
+            <Button fx:id="isk_sp_d_r" layoutX="912.0" layoutY="267.0" mnemonicParsing="false" onAction="#isk_sp_d_r_klik" text="Isključi" />
+            <Button fx:id="uklop_botun_s2" layoutX="20.0" layoutY="387.0" mnemonicParsing="false" onAction="#uklop_botun_s2_klik" text="Uklop S2">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="isklop_botun" layoutX="19.0" layoutY="451.0" mnemonicParsing="false" onAction="#isklop_botun_klik" text="Isklop">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <ScrollPane layoutX="716.0" layoutY="619.0" prefHeight="164.0" prefWidth="527.0">
+               <content>
+                  <Label fx:id="labela_greske" prefHeight="170.0" prefWidth="538.0" style="-fx-background-color: #d3d3d3;" textFill="#cd2f2f" />
+               </content>
+            </ScrollPane>
+            <Label layoutX="714.0" layoutY="580.0" text="Upozorenja">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TitledPane layoutX="963.0" layoutY="340.0" prefHeight="200.0" prefWidth="200.0" text="Upravljanje">
+               <content>
+                  <Pane prefHeight="174.0" prefWidth="151.0">
+                     <children>
+                        <RadioButton fx:id="r_daljinsko" layoutX="56.0" layoutY="52.0" mnemonicParsing="false" onAction="#daljinsko_klik" text="Daljinsko" />
+                        <RadioButton fx:id="r_lokalno" layoutX="58.0" layoutY="93.0" mnemonicParsing="false" onAction="#lokalno_klik" text="Lokalno" />
+                     </children>
+                  </Pane>
+               </content>
+            </TitledPane>
+            <Button fx:id="obrisi_botun" layoutX="870.0" layoutY="582.0" mnemonicParsing="false" onAction="#obrisi_botun_klik" text="Obriši" />
+            <Button fx:id="uklop_botun_s1" layoutX="21.0" layoutY="323.0" mnemonicParsing="false" onAction="#uklop_botun_s1_klik" text="Uklop S1">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Line endX="500.0" layoutX="128.0" layoutY="547.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="320.0" layoutX="341.0" layoutY="582.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Line fx:id="linra_linija" endX="200.0" layoutX="401.0" layoutY="645.0" rotate="90.0" startX="254.0" stroke="#d31717" strokeWidth="7.0" />
+            <Circle fx:id="linra_lampica" fill="#5cc344" layoutX="574.0" layoutY="644.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" />
+            <Line endX="210.0" layoutX="396.0" layoutY="693.0" rotate="90.0" startX="254.0" strokeWidth="7.0" />
+            <Button fx:id="linra_uk" layoutX="643.0" layoutY="612.0" mnemonicParsing="false" onAction="#linra_uk_klik" text="Uključi" />
+            <Button fx:id="linra_isk" layoutX="643.0" layoutY="646.0" mnemonicParsing="false" onAction="#linra_isk_klik" text="Isključi" />
+            <Line endX="350.0" layoutX="327.0" layoutY="725.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="320.0" layoutX="343.0" layoutY="735.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="290.0" layoutX="355.0" layoutY="745.0" startX="254.0" strokeWidth="7.0" />
+            <Line endX="260.0" layoutX="370.0" layoutY="755.0" startX="254.0" strokeWidth="7.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
